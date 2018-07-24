@@ -1,0 +1,371 @@
+@charset "utf-8";
+
+/*********** reset ************/
+/*html {
+	overflow: hidden;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+*/
+
+body,
+h1,h2,h3,h4,h5,h6,
+blockquote
+{
+	margin: 0;
+}
+
+ol
+{
+	margin: 0;
+	padding: 0;
+}
+
+li
+{
+	list-style: none;
+}
+
+/********** 通用 *********/
+.hide {
+	display: none;
+}
+
+
+/******** 布局 ********/
+
+body {
+	height: 1200px;
+}
+
+/**/
+
+.pick,
+.toolbar
+{
+	min-width: 1000px;
+}
+
+.top
+{
+	min-width: 960px;
+}
+
+main
+{
+	min-width: 980px;
+}
+
+.top-in
+{
+	max-width: 1200px;
+}
+
+.toolbar-in,
+.main-in
+{
+	max-width: 1200px;
+}
+
+/******** 顶部 ********/
+
+.top {
+	overflow: hidden;
+	padding: 0 20px;
+	border-bottom: solid 1px #ccc;
+}
+
+.top-in {
+	margin: 0 auto;
+}
+
+/* 标志 */
+.logo {
+	padding: 12px 0 0 0;
+	float: left;
+	text-align: left;
+	width: 200px;/**/
+	height: 36px;
+}
+
+.logo h1 {
+	float: left;
+	height: 36px;
+	line-height: 36px;
+	font-size: 32px;
+	font-weight: normal;
+	font-family: "Microsoft YaHei";
+}
+
+.logo address {	
+	padding: 0 0 0 8px;
+	float: left;
+	height: 36px;
+	line-height: 36px;
+	font-size: 24px;
+	font-style: normal;
+}
+
+.logo a {
+	color: #f00;
+	text-decoration: none;
+}
+
+/* 帐号 */
+.account {
+	padding: 20px 0;
+	float: right;
+	text-align: right;
+	width: 200px;/**/
+	height: 24px;
+}
+
+.account nav {
+	height: 24px;
+	line-height: 24px;
+}
+
+.account a {
+	padding: 0 6px;
+	font-size: 14px;
+}
+
+/******** 搜索 ********/
+.search {
+	overflow: hidden;
+	margin: 0 200px;/**/
+	padding: 14px 0 0 0;
+}
+
+.search form {
+	overflow: hidden;
+	margin: 0 auto;
+    max-width: 600px;
+	width: 100%;
+}
+
+.search div {
+	margin: 0 100px 0 0;
+	padding: 0 0 0 10px;
+	border: solid 1px #ccc;
+	border-right: none;
+}
+
+.search input {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	display: block;
+	width: 100%;
+	height: 34px;
+	line-height: 34px;
+	font-size: 16px;
+	background: rgba(255,255,255, 0.5);
+}
+
+.search blockquote {
+	border: solid 1px #ccc;
+	float: right;
+	text-align: center;
+	width: 98px;
+}
+
+.search button {
+	padding: 0;
+	border: none;
+	outline: none;
+	width: 100%;
+	height: 34px;
+	line-height: 34px;
+	font-size: 26px;
+}
+
+
+/******** 快选 ********/
+.pick {
+	border-bottom: dashed 1px #ddd;
+}
+
+/******** 分类 ********/
+
+.category {
+}
+
+.category blockquote {
+	margin: 0;
+	padding: 0 10px;
+}
+
+.category nav {	
+	overflow: hidden;
+	overflow-x: scroll;/**/
+}
+
+.category div {
+	overflow: hidden;
+	width: 1920px;
+}
+
+.category dl {
+	margin: 0;
+	padding: 5px;
+	float: left;
+}
+
+.category dt {
+	text-align: center;
+}
+
+.category dd {
+	margin: 0;
+}
+
+.category li {
+	display: inline-block;
+}
+
+.category a {
+	
+}
+
+/* 工具栏 */
+.toolbar {
+	border-bottom: solid 1px #ddd;
+}
+
+.toolbar-in
+{
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 8px 0;
+}
+
+.toolbar-left {
+	float: left;
+}
+
+.toolbar-right {
+	padding: 0 10px 0 0;
+	float: right;
+}
+
+.toolbar blockquote {
+	padding: 0 0 0 10px;
+	float: left;
+}
+
+.toolbar h5
+{
+	padding: 0 5px 0 0;
+	float: left;
+	height: 21px;
+	line-height: 21px;
+}
+
+.toolbar form
+{
+	float: left;
+}
+
+.nav {
+}
+
+.site {
+}
+
+.filter {
+}
+
+.tool {
+}
+
+.group {
+}
+
+.order {
+}
+
+.view {
+}
+
+/* 主要 */
+main {
+	overflow: hidden;
+	display: block;
+	clear: left;
+	/*margin: 0 200px;*/
+	padding: 20px 10px;
+}
+
+.main-in
+{
+	margin: 0 auto;	
+	
+}
+
+article {
+	overflow: hidden;
+	padding: 5px;
+	margin-bottom: 20px;
+	border: dashed 1px #ddd;
+}
+
+section {
+	/*margin: 5px 0 0 0;*/
+	padding: 5px;
+	/*border-bottom: solid 1px #ddd;*/
+}
+
+section header {
+	padding: 0 0 0 10px;
+	border-bottom: solid 1px #eee;
+}
+
+section header h2 {
+	line-height: 28px;
+	font-size: 16px;
+}
+
+section ol {
+	overflow: hidden;
+	padding: 10px 0;
+}
+
+section li {
+	float: left;
+	text-align: center;
+	/*padding: 5px;
+	width: 284px;*/
+	width: 25%;
+	height: auto;
+}
+
+section div {
+	overflow: hidden;
+	margin: 5px;
+	padding: 5px 0;
+	border: solid 1px #fff;
+	border-radius: 5px;
+}
+
+section div:hover {
+	border-color: #fcc;
+}
+
+section div a {
+}
+
+section div p {
+	margin: 0 5px;
+}
+
+section div img {
+	width: 270px;
+	max-width: 100%;
+}
+
+section div b {
+	display: block;
+}

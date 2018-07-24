@@ -1,0 +1,534 @@
+@charset "utf-8";
+html {
+	
+}
+
+body,
+h1,h2,h3,h4,h5,h6,
+blockquote
+{
+	margin: 0;
+}
+
+ol
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.hide {
+	display: none;
+}
+
+/******** 布局 ********/
+
+body {
+	background: #fff;
+}
+
+header {
+	
+}
+
+/* 顶栏 */
+header.top {
+	overflow: hidden;
+	/*min-width: 1050px;*/
+}
+
+/* 快选栏 */
+header.pickbar {
+	/*min-width: 1050px;*/
+	border-bottom: dashed 1px #eee;
+}
+
+aside {
+	display: none;
+	float: left;
+	height: 1080px;
+	width: 200px;
+}
+
+/* 导航 */
+aside.navigation {
+}
+
+/* 预览 */
+aside.preview {
+	float: right;
+}
+
+/* 工具栏 */
+header.toolbar {
+	overflow: hidden;
+	margin: 0 auto;
+	border-bottom: solid 1px #ccc;
+}
+
+.toolbar blockquote {
+	overflow: hidden;
+}
+
+/* 主要 */
+main {
+	overflow: hidden;
+	display: block;
+	clear: left;
+	/*margin: 0 200px;*/
+}
+
+
+/* 页脚 */
+footer {
+	overflow: hidden;
+}
+
+footer.related {
+	margin: 0 200px;
+	border-top: solid 1px #ccc;
+}
+
+footer.bottom {
+	overflow: hidden;
+	padding: 0 10px;
+	border-top: solid 1px #ccc;
+	height: 44px;
+}
+
+/* 标志 */
+.logo {
+	padding: 4px 0;
+	float: left;
+	text-align: center;
+	width: 200px;
+	height: 56px;
+}
+
+.logo h1 {
+	height: 36px;
+	line-height: 36px;
+	font-size: 32px;
+}
+
+.logo address {
+	padding: 0 2px 0 0;
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+	font-style: normal;
+}
+
+.logo a {
+	color: #f00;
+	text-decoration: none;
+}
+
+/* 帐号 */
+.account {
+	padding: 20px 0;
+	float: right;
+	text-align: center;
+	width: 200px;
+	height: 24px;
+}
+
+.account nav {
+	height: 24px;
+	line-height: 24px;
+}
+
+.account a {
+	padding: 0 6px;
+	font-size: 14px;
+}
+
+/******** 搜索 ********/
+.search {
+	overflow: hidden;
+	margin: 0 200px;
+	padding: 14px 0 0 0;
+}
+
+.search form {
+	overflow: hidden;
+	width: 100%;
+}
+
+.search div {
+	margin: 0 100px 0 0;
+	padding: 0 0 0 10px;
+	border: solid 1px #ccc;
+	border-right: none;
+}
+
+.search input {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	display: block;
+	width: 100%;
+	height: 34px;
+	line-height: 34px;
+	font-size: 16px;
+	background: rgba(255,255,255, 0.5);
+}
+
+.search blockquote {
+	border: solid 1px #ccc;
+	float: right;
+	text-align: center;
+	width: 98px;
+}
+
+.search button {
+	padding: 0;
+	border: none;
+	outline: none;
+	width: 100%;
+	height: 34px;
+	line-height: 34px;
+	font-size: 26px;
+}
+
+/******** 分类 ********/
+.category {
+	border-top: solid 1px #ccc;
+}
+
+.category blockquote {
+	margin: 0;
+	padding: 0 10px;
+}
+
+.category nav {	
+	overflow: hidden;
+	/*overflow-x: scroll;*/
+}
+
+.category div {
+	overflow: hidden;
+	width: 1920px;
+}
+
+.category dl {
+	margin: 0;
+	padding: 5px;
+	float: left;
+}
+
+.category dt {
+	text-align: center;
+}
+
+.category dd {
+	margin: 0;
+}
+
+.category li {
+	display: inline-block;
+}
+
+.category a {
+	
+}
+
+.leftBar {
+	overflow: hidden;
+	float: left;
+}
+
+.rightBar {
+	overflow: hidden;
+	float: right;
+}
+
+/******** 来源 ********/
+.source {
+	overflow: hidden;
+	/*padding: 5px 0;*/
+	padding: 5px 20px;
+	border-bottom: dashed 1px #eee;
+}
+
+blockquote.nav {
+	margin: 0;
+	float: left;
+}
+
+blockquote.site form {
+	padding: 0 0 0 10px;
+	float: left;
+}
+
+blockquote.tool {
+	float: right;
+}
+
+
+/******** 输出 ********/
+.output {
+	overflow: hidden;
+	/*padding: 5px 0;*/
+	padding: 5px 20px;
+	
+}
+
+blockquote.view,
+.rightBar blockquote
+{
+	padding: 0 10px 0 0;
+	float: right;
+}
+
+.toolbar h5
+{
+	margin: 0;
+	padding: 0 5px 0 0;
+	float: left;
+	height: 21px;
+	line-height: 21px;
+}
+
+.toolbar form
+{
+	float: left;
+}
+
+.output blockquote.filter
+{
+	float: left;
+}
+
+blockquote.order,
+blockquote.group
+{
+	
+}
+
+blockquote.group {
+	padding: 0;
+}
+
+
+/********** 相关的 ***********/
+
+.related ol {
+	overflow:  hidden;
+	list-style: none;
+}
+
+.related li {
+	padding: 10px;
+	float: left;
+}
+
+.related a {
+	border: solid 1px #ccc;
+	border-radius: 50px;
+	float: left;
+	text-align: center;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+}
+
+/* 应用 */
+
+.app {
+	float: left;
+}
+
+.app ol {
+	overflow: hidden;
+	padding: 7px;
+}
+
+.app li {
+	float: left;
+}
+
+.app a {
+	margin: 0 4px;
+	padding: 4px;
+	border: solid 1px #ccc;
+	border-radius: 4px;
+	display: block;
+	float: left;
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+}
+
+/* 关于 */
+
+.about {
+	float: right;
+	
+}
+
+.about ol {
+	overflow: hidden;
+	padding: 7px;
+}
+
+.about li {
+	float: left;
+}
+
+.about a {
+	margin: 0 4px;
+	padding: 4px;
+	display: block;
+	float: left;
+	height: 22px;
+	line-height: 22px;
+	font-size: 16px;
+}
+
+/* 版权 */
+
+.copyright {
+	margin: 0 174px 0 338px;
+	padding:  0 164px 0 0;
+	text-align: center;
+}
+
+.copyright address {
+	padding: 7px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+	font-style: normal;
+}
+
+.copyright a {
+	text-decoration: none;
+	color: #999;
+}
+
+
+/********** 条目分级 ***********/
+
+.download {
+	border: solid 1px #ccc;
+	padding: 5px;
+	position: fixed;
+	z-index: 999;
+	right: 10px;
+	bottom: 60px;	
+	background: rgba(255,255,255,0.60);
+}
+
+.download div {
+	overflow: hidden;
+	padding: 0 0 5px 0;
+}
+
+.download div a {
+	float: left;
+}
+
+.download div button {
+	float: right;
+}
+
+
+.download blockquote {
+	overflow: hidden;
+	overflow-y: auto;
+	text-align: center;
+	width: 100px;
+	height: 200px;
+}
+
+table {
+}
+
+tr {
+	
+}
+
+td {
+	padding: 1px;
+	
+}
+
+.download blockquote a {
+	border: solid 1px #ccc;
+	display: block;
+	float: left;
+	width: 10px;
+	height: 10px;
+	line-height: 10px;
+	font-size: 10px;
+	text-decoration: none;
+	color: #fff;
+}
+
+.downloaded {
+	background: rgba(0,0,0,0.90);
+}
+
+.downloading {
+	background: #888;
+}
+
+.downloaded a,
+.downloading a
+{
+	border-color: #fff;
+}
+
+/********* 分级颜色 **********/
+
+.bg_1 a {
+	background: #800;
+	
+}
+
+.bg_2 a {
+	background: #f00;
+	
+}
+
+.bg_3 a {
+	background: #f80;
+	
+}
+
+.bg_4 a {
+	background: #ff0;
+	
+}
+
+.bg_5 a {
+	background: #0f0;
+	
+}
+
+.bg_6 a {
+	background: #0ff;
+	
+}
+
+.bg_7 a {
+	background: #00f;
+	
+}
+
+.bg_8 a {
+	background: #008;
+	
+}
+
+.bg_9 a {
+	background: #80f;
+	
+}
+
+.bg_10 a {
+	background: #f0f;
+	
+}
