@@ -3,6 +3,7 @@
 /*********** reset ************/
 /*html {
 	overflow: hidden;
+	overflow-y: auto;
 	display: block;
 	width: 100%;
 	height: 100%;
@@ -25,6 +26,13 @@ ol
 li
 {
 	list-style: none;
+}
+
+hr {
+	margin: -10px 0 0 0;
+	position: absolute;
+	width: 100%;
+	left: 0;
 }
 
 /********** 通用 *********/

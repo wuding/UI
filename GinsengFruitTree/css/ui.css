@@ -532,3 +532,25 @@ td {
 	background: #f0f;
 	
 }
+
+.loading {
+	text-align: center;
+	height: 100px;
+	line-height: 14px;
+	font-size: 14px;
+}
+
+.loading li {
+	padding: 1px;
+	float: left;
+}
+
+.loading a {
+	padding: 1px;
+	border: 1px solid #ccc;
+	width: 14px;
+	float: left;
+	text-decoration: none;
+	color: #fff;
+	background: #00f;
+}
