@@ -208,12 +208,13 @@ main
 
 .category nav {	
 	overflow: hidden;
-	overflow-x: scroll;/**/
+	overflow-x: auto;/**/
 }
 
 .category div {
 	overflow: hidden;
-	width: 1920px;
+	/*width: 1920px;*/
+	white-space: nowrap;
 }
 
 .category dl {
@@ -232,6 +233,9 @@ main
 
 .category li {
 	display: inline-block;
+	max-width: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .category a {
@@ -348,6 +352,7 @@ section li {
 	width: 284px;*/
 	width: 25%;
 	height: auto;
+	min-height: 286px;
 }
 
 section div {
@@ -359,11 +364,23 @@ section div {
 }
 
 section div:hover {
-	border-color: #fcc;
+	border-color: #f22;
+	background: #f55;
+}
+
+section div:hover a {
+	color: #fff;
 }
 
 section div a {
+	text-decoration: none;
 }
+
+/*
+section div a:link {
+	color: #222;
+}
+*/
 
 section div p {
 	margin: 0 5px;
@@ -372,8 +389,10 @@ section div p {
 section div img {
 	width: 270px;
 	max-width: 100%;
+	max-height: 270px;
 }
 
 section div b {
 	display: block;
+	font-weight: normal;
 }
