@@ -233,7 +233,7 @@ main
 
 .category li {
 	display: inline-block;
-	max-width: 50px;
+	max-width: 40px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -373,6 +373,8 @@ section div:hover a {
 }
 
 section div a {
+	overflow: hidden;
+    display: block;
 	text-decoration: none;
 }
 
@@ -395,4 +397,26 @@ section div img {
 section div b {
 	display: block;
 	font-weight: normal;
+}
+
+.large section li {
+	width: 20%;
+}
+
+.medium section li {
+	width: 10%;
+}
+
+.small section li {
+	width: 20%;
+	min-height: auto;
+}
+
+.small section div p {
+	float: left;
+	width: 80px;
+}
+
+.small section div b {
+	float: left;
 }
