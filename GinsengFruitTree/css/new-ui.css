@@ -160,7 +160,7 @@ main
 	border-right: none;
 }
 
-.search input {
+.search div input {
 	margin: 0;
 	padding: 0;
 	border: none;
@@ -180,7 +180,7 @@ main
 	width: 98px;
 }
 
-.search button {
+.search blockquote button {
 	padding: 0;
 	border: none;
 	outline: none;
@@ -347,8 +347,8 @@ section ol {
 
 section li {
 	float: left;
-	text-align: center;
-	/*padding: 5px;
+	/*text-align: center;
+	padding: 5px;
 	width: 284px;*/
 	width: 25%;
 	height: auto;
@@ -358,18 +358,18 @@ section li {
 section div {
 	overflow: hidden;
 	margin: 5px;
-	padding: 5px 0;
-	border: solid 1px #fff;
+	padding: 5px;
+	border: solid 2px #fff;
 	border-radius: 5px;
 }
 
 section div:hover {
 	border-color: #f22;
-	background: #f55;
+	/*background: #f55;*/
 }
 
 section div:hover a {
-	color: #fff;
+	/*color: #fff;*/
 }
 
 section div a {
@@ -385,7 +385,7 @@ section div a:link {
 */
 
 section div p {
-	margin: 0 5px;
+	margin: 0;
 }
 
 section div img {
@@ -395,8 +395,23 @@ section div img {
 }
 
 section div b {
+	overflow: hidden;
+    text-overflow: ellipsis;
 	display: block;
+	max-width: 100%;
+	max-height: 40px;
+	line-height: 20px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+section div var {
+	display: block;
+	line-height: 24px;
+    font-size: 16px;
 	font-weight: normal;
+	font-style: normal;
+	color: #f00;
 }
 
 .large section li {
@@ -418,5 +433,7 @@ section div b {
 }
 
 .small section div b {
-	float: left;
+	/*float: left;*/
+	max-height: 60px;
+	padding: 0 0 0 5px;
 }
