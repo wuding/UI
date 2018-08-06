@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>红券网</title>
+</head>
+
+<body>
+<div id="app-4">
+  <ol>
+    <li v-for="item in goodsList">
+      {{ item.name }}
+    </li>
+  </ol>
+</div>
+
+<!-- 脚本 -->
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/vue.js"></script>
+<script>
+var app = new Vue({
+  el: '#app-4',
+  data: {
+	goodsList : [],
+    message: 'Hello Vue!'
+  },
+  mounted : function () {
+	var self = this;
+	$.getJSON("http://lan.cpn.red/api/item/list", { q: "饼" }, function(json){
+	  // console.log(json);
+	  self.goodsList = json.data;
+	});
+	
+  }
+})
+</script>
+</body>
+</html>
