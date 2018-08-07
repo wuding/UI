@@ -9,7 +9,7 @@
 <div id="app-4">
   <ol>
     <li v-for="item in goodsList">
-      {{ item.name }}
+      {{ item.title }}
     </li>
   </ol>
 </div>
@@ -26,7 +26,7 @@ var app = new Vue({
   },
   mounted : function () {
 	var self = this;
-	$.getJSON("http://lan.cpn.red/api/item/list", { q: "饼" }, function(json){
+	$.getJSON("http://lan.cpn.red/api/item/list", { q: "七夕", site: 2 }, function(json){
 	  // console.log(json);
 	  self.goodsList = json.data;
 	});

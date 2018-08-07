@@ -35,6 +35,10 @@ hr {
 	left: 0;
 }
 
+a {
+	text-decoration: none;
+}
+
 /********** 通用 *********/
 .hide {
 	display: none;
