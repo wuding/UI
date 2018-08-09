@@ -243,8 +243,25 @@ main
 	border-left: 1px solid #eee;
 }
 
+.category nav dl.current-tab {
+	background: #fff7fa;
+}
+
+.category nav ol {
+	padding: 5px 0;
+	display: block;
+	float: left;
+	max-width: 5px;
+	height: 20px;
+	line-height: 20px;
+}
+
 .category dt {
 	text-align: center;
+}
+
+.category nav dt.current-cat {
+	font-weight: bold;
 }
 
 .category dd {
@@ -258,8 +275,20 @@ main
     text-overflow: ellipsis;
 }
 
+.category li.current-cat {
+	font-weight: bold;
+}
+
 .category a {
-	
+}
+
+.category nav dt a {
+	display: block;
+}
+
+.category nav ol a {
+	display: block;
+	width: 5px;
 }
 
 /* 工具栏 */
