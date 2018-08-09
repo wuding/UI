@@ -162,6 +162,11 @@ main
 	padding: 0 0 0 10px;
 	border: solid 1px #ccc;
 	border-right: none;
+	border-radius: 4px 0px 0px 4px;
+}
+
+.search div:hover {
+	border-color: #e62e04;
 }
 
 .search div input {
@@ -178,7 +183,8 @@ main
 }
 
 .search blockquote {
-	border: solid 1px #ccc;
+	border: solid 1px #e62e04;
+	border-radius: 0px 4px 4px 0px;
 	float: right;
 	text-align: center;
 	width: 98px;
@@ -192,8 +198,13 @@ main
 	height: 34px;
 	line-height: 34px;
 	font-size: 26px;
+	color: #fff;
+	background: #e62e04;
 }
 
+.search blockquote button:hover {
+	background: #f10215;
+}
 
 /******** 快选 ********/
 .pick {
@@ -203,6 +214,7 @@ main
 /******** 分类 ********/
 
 .category {
+	font-size: 15px;
 }
 
 .category blockquote {
@@ -227,6 +239,10 @@ main
 	float: left;
 }
 
+.category nav dl {
+	border-left: 1px solid #eee;
+}
+
 .category dt {
 	text-align: center;
 }
@@ -237,7 +253,7 @@ main
 
 .category li {
 	display: inline-block;
-	max-width: 40px;
+	max-width: 45px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -392,6 +408,48 @@ section div p {
 	margin: 0;
 }
 
+section div menu {
+	position: relative;	
+	margin: 0 0 -26px 0;
+	padding: 0 8px;
+	border: 1px dotted #ff0060;
+	width: auto;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+	
+	display: block;
+    float: right;
+	text-align: center;
+    color: #ff0060;
+	background: #fff7fa;
+}
+
+section .tuan div menu {
+	border: 1px dotted #FF0B04;
+    color: #FF0B04;
+	background: #FEEA7E;
+}
+
+section div:hover menu {
+	 display: none;
+}
+
+section div time {
+    display: none;
+    position: relative;
+    margin: -28px 0 0 0;
+    line-height: 28px;
+    font-size: 12px;
+    background-color: rgba(0,0,0,.6);
+    color: #fff;
+    text-align: center;
+}
+
+section div:hover time {
+	 display: block;
+}
+
 section div img {
 	width: 270px;
 	max-width: 100%;
@@ -402,6 +460,7 @@ section div b {
 	overflow: hidden;
     text-overflow: ellipsis;
 	display: block;
+	clear: left;
 	max-width: 100%;
 	max-height: 40px;
 	line-height: 20px;
@@ -409,13 +468,32 @@ section div b {
     font-weight: normal;
 }
 
-section div var {
+
+
+section div span {
 	display: block;
 	line-height: 24px;
+}
+
+section div var {
+	display: block;
+	float: left;
     font-size: 16px;
 	font-weight: normal;
 	font-style: normal;
 	color: #f00;
+}
+
+section div:hover var {
+	font-weight: bold;
+}
+
+section div s {
+	display: block;
+	float: right;
+	font-size: 12px;
+	text-decoration: none;
+	color: #999;
 }
 
 .large section li {
