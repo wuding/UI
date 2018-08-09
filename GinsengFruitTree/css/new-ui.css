@@ -412,16 +412,16 @@ section div {
 	border-radius: 5px;
 }
 
-section div:hover {
+section li div:hover {
 	border-color: #f22;
 	/*background: #f55;*/
 }
 
-section div:hover a {
+section li div:hover a {
 	/*color: #fff;*/
 }
 
-section div a {
+section li div a {
 	overflow: hidden;
     display: block;
 	text-decoration: none;
