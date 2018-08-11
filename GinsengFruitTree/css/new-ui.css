@@ -10,9 +10,8 @@
 }
 */
 
-body,
-h1,h2,h3,h4,h5,h6,
-blockquote
+body,p,blockquote,
+h1,h2,h3,h4,h5,h6
 {
 	margin: 0;
 }
@@ -49,6 +48,24 @@ a {
 
 body {
 	height: 1200px;
+}
+
+noscript {
+	overflow: hidden;
+	text-align: center;
+	color: #fff;	
+	line-height: 36px;
+	font-size: 16px;
+}
+
+noscript div
+{
+	padding: 4px 0;
+	background: #000;
+}
+
+noscript p {
+	
 }
 
 /**/
@@ -401,7 +418,7 @@ section li {
 	width: 284px;*/
 	width: 25%;
 	height: auto;
-	min-height: 286px;
+	/*min-height: 286px;*/
 }
 
 section div {
